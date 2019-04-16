@@ -5,3 +5,5 @@
     gem 'rest-client'
     gem 'httparty'
     gem 'json'
+    gem 'rspec'
+    gem 'rspec-expectations'
