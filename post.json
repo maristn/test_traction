@@ -1,0 +1,23 @@
+{
+  "credentials": {},
+  "actions": [{
+     "1": {
+            "type": "HTTP",
+            "method": "POST",
+            "url": "http://localhost:3000/job",
+            "headers": {"authorization": "Basic 12345","ALLOW-ORIGIN": "*"},
+            "data": {"firstName": "Cameron", "lastName": "Wiebe"},
+            "params": "",
+            "withCredentials": false,
+            "responseType": "json",
+            "action": "http.call",
+            "dependencies": {
+                "swap": {}
+            },
+            "server_dependencies": {},
+            "node_id": 4,
+            "bodyType": "json",
+            "index": 1
+        }
+}]
+}
