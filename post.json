@@ -1,23 +1,63 @@
 {
   "credentials": {},
   "actions": [{
-     "1": {
-            "type": "HTTP",
-            "method": "POST",
-            "url": "http://localhost:3000/job",
-            "headers": {"authorization": "Basic 12345","ALLOW-ORIGIN": "*"},
-            "data": {"firstName": "Cameron", "lastName": "Wiebe"},
-            "params": "",
-            "withCredentials": false,
-            "responseType": "json",
-            "action": "http.call",
-            "dependencies": {
-                "swap": {}
+            "0": {
+                "type": "HTTP",
+                "method": "GET",
+                "url": "https://demo3285182.mockable.io/get",
+                "headers": "{}",
+                "data": "{}",
+                "params": "",
+                "withCredentials": false,
+                "responseType": "json",
+                "action": "http.call",
+                "dependencies": {
+                    "swap": {}
+                },
+                "server_dependencies": {},
+                "node_id": 6,
+                "origin": "server",
+                "bodyType": "json",
+                "fields": [
+                    {
+                        "value": "people[0].firstname",
+                        "index": 0
+                    },
+                    {
+                        "value": "people[0].lastname",
+                        "index": 0
+                    }
+                ],
+                "index": 0
             },
-            "server_dependencies": {},
-            "node_id": 4,
-            "bodyType": "json",
-            "index": 1
-        }
-}]
+            "1": {
+                "type": "HTTP",
+                "method": "POST",
+                "url": "https://demo3285182.mockable.io/post",
+                "headers": "{}",
+                "data": "{\n    \"firstname\": \"@firstname@\",\n    \"lastname\": \"@lastname@\"\n}",
+                "params": "",
+                "withCredentials": false,
+                "responseType": "json",
+                "action": "http.call",
+                "dependencies": {
+                    "swap": {
+                        "@firstname@": {
+                            "id": "6",
+                            "index": "0"
+                        },
+                        "@lastname@": {
+                            "id": "6",
+                            "index": "1"
+                        }
+                    }
+                },
+                "server_dependencies": {},
+                "node_id": 7,
+                "origin": "server",
+                "bodyType": "json",
+                "fields": [],
+                "index": 1
+            }
+        }]
 }
