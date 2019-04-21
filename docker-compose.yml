@@ -1,0 +1,10 @@
+gauge:
+  build: .
+  volumes:
+    - .:/app
+  entrypoint: gauge
+
+networks:
+  default:
+    external:
+      name: guest-connector-io_web_1
