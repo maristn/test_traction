@@ -5,7 +5,7 @@ tags: guest-connect-io, api, delete
 
 ## DELETE specific data using id
 Use DELETE to remove an object specified by id. 
-For this test I use the previous object created on POST.
+For this test, use the previous object created on POST.
 
 tags: delete, id, regression
 
@@ -26,7 +26,7 @@ tags: delete, id, error
 
 ## DELETE an inexistent id
 Use DELETE to remove an inexistent object specified by id. 
-For this test I use the previous object created on POST.
+For this test, use the previous object created on POST.
 
 tags: delete, id, error, bugged
 
@@ -39,7 +39,7 @@ tags: delete, id, error, bugged
 ## DELETE specific data using token
 
 Use DELETE to remove an object specified by token. 
-For this test I use the previous object created on POST.
+For this test, use the previous object created on POST.
 
 tags: delete, token, error
 
